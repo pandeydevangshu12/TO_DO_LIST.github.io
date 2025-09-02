@@ -1,0 +1,105 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: #eea7a7;
+  margin: 100;
+  padding: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+.card {
+  background: #ebc7c7;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 10px rgba(231, 229, 120, 0.555);
+  width: 100%;
+  max-width: 500px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+  font-size: xxx-large;
+  text-align: center;
+}
+
+.subtitle {
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.add input {
+  flex: 1;
+  padding: 10px;
+  border: 5px solid #000000;
+  border-radius: 10px;
+}
+
+.add button {
+  background: #000000;
+  color: #9b9cca;
+  border: 2px solid rgba(8, 8, 8, 0.74);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  cursor: pointer;        
+
+}
+
+.add button:hover {
+  background: #2563eb;
+}
+
+.todos li {
+  display: flex;                   
+  justify-content: space-between;  
+  align-items: center;
+  counter-increment: task;
+  position: relative;
+  padding: 8px 10px 8px 35px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #fff;
+}
+
+.todos li::before {
+  content: counter(task) ". ";
+  position: absolute;
+  left: 10px;
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+.todos li .delete {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.empty {
+  text-align: center;
+  color: #000000;
+  margin: 20px 0;
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #000000;
+  text-align: right;
+}
