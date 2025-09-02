@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="todo_css.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="card" aria-labelledby="app-title">
+      <header class="header">
+        <h1 id="app-title" class="title">To-Do</h1>
+        <p class="subtitle">⚡ “Quick. Minimal. Always there.” ⚡</p>
+      </header>
+
+      <form id="add-form" class="add" autocomplete="off">
+        <input id="new-todo" name="new-todo" type="text" placeholder="Add a new task…" />
+        <button type="submit">Add</button>
+      </form>
+
+      <ul id="list" class="todos"></ul>
+      <div id="empty" class="empty" hidden>No tasks yet ✨</div>
+
+      <footer class="footer">
+        <div id="count" class="muted">0 items</div>
+      </footer>
+    </main>
+</div>
+  <script src="todo_js.js"></script>
+</body>
+</html>
